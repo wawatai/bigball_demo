@@ -3,8 +3,87 @@
 v2.0 | 20110126
 License: none (public domain)
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
-center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -17,7 +96,17 @@ center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, t
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -31,15 +120,20 @@ main {
   display: block;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -57,7 +151,8 @@ button {
   padding: 0px;
 }
 
-select, input {
+select,
+input {
   font-family: "微軟正黑體";
   outline: none;
   -webkit-appearance: none;
@@ -73,13 +168,13 @@ a {
 }
 
 html {
+  background: #0a1f42;
   width: 100%;
   height: 100%;
-  background: #002047;
+  min-width: 1000px;
 }
 html body {
   width: 100%;
-  min-width: 1000px;
   height: 100%;
   overflow: hidden;
 }
@@ -88,10 +183,6 @@ html body main {
   height: 100%;
 }
 html body main article {
-  width: 100%;
-  min-width: 1000px;
-  height: 100%;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,64 +192,13 @@ html body main article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-html body main article .left {
-  width: 50%;
+  width: 100%;
   height: 100%;
   position: relative;
 }
-html body main article .left .object1 {
-  width: 667px;
-  height: 1000px;
-  background: url(../images/object1.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  -webkit-animation: l_side 0.2s 0.2s ease-in-out;
-          animation: l_side 0.2s 0.2s ease-in-out;
-}
-html body main article .left .object3 {
-  width: 525px;
-  height: 920px;
-  background: url(../images/object3.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 61px;
-  left: 241px;
-  -webkit-animation: lag 0.5s, o3 0.4s 0.5s ease-in-out;
-          animation: lag 0.5s, o3 0.4s 0.5s ease-in-out;
-}
-html body main article .left .object3_s {
-  width: 525px;
-  height: 920px;
-  background: url(../images/object3.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 71px;
-  left: 251px;
-  opacity: 0;
-  -webkit-animation: lag 0.7s linear, r_side 0.3s 0.7s linear, shadow1 0.6s 0.7s ease-in-out;
-          animation: lag 0.7s linear, r_side 0.3s 0.7s linear, shadow1 0.6s 0.7s ease-in-out;
-}
-html body main article .right {
-  width: 50%;
-  height: 100%;
-  position: relative;
-}
-html body main article .right .logo {
-  width: 323px;
-  height: 164px;
-  background: url("../images/logo.png") no-repeat;
-  background-size: 100%;
-  position: absolute;
-  top: 18px;
-  left: -162px;
-}
-html body main article .right .inputBox {
-  width: 335px;
-  height: 173px;
-  background: url("../images/inputBG.png") no-repeat center;
+html body main article .inputBox {
+  width: 370px;
+  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,311 +209,127 @@ html body main article .right .inputBox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 11px 10px 0 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 70px;
+  z-index: 99;
   position: absolute;
-  top: 183px;
-  left: -165px;
+  top: 50px;
+  left: 50%;
+  gap: 20px;
 }
-html body main article .right .inputBox label {
-  width: 80%;
-  height: 46px;
+html body main article .inputBox > .logo {
+  background: url("../images/logo.png") no-repeat center/contain;
+  width: 420px;
+  height: 120px;
+}
+html body main article .inputBox > label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 0 10px 0;
 }
-html body main article .right .inputBox label:nth-of-type(2) {
-  margin: 0 0 20px 0;
-}
-html body main article .right .inputBox label .logIcon {
-  width: 25px;
-  height: 25.5px;
-  margin-right: 10px;
-  background-size: 100%;
-}
-html body main article .right .inputBox label input {
-  width: 100%;
-  height: 41px;
-  background: #142329;
-  border: 1px solid #22e8ff;
-  -webkit-box-shadow: inset 1px 1px 7px rgba(0, 0, 0, 0.4196078431), inset -1px -1px 7px rgba(0, 0, 0, 0.4196078431);
-          box-shadow: inset 1px 1px 7px rgba(0, 0, 0, 0.4196078431), inset -1px -1px 7px rgba(0, 0, 0, 0.4196078431);
-  color: #ffffff;
-  font-size: 20px;
-  padding: 17px 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-html body main article .right .inputBox label input::-webkit-input-placeholder {
-  color: #ffffff;
-}
-html body main article .right .inputBox label input::-moz-placeholder {
-  color: #ffffff;
-}
-html body main article .right .inputBox label input:-ms-input-placeholder {
-  color: #ffffff;
-}
-html body main article .right .inputBox label input::-ms-input-placeholder {
-  color: #ffffff;
-}
-html body main article .right .inputBox label input::placeholder {
-  color: #ffffff;
-}
-html body main article .right .inputBox label input:focus {
-  border: 2px solid #da0f12;
-  -webkit-box-shadow: 1px 1px 15px #ff4431;
-          box-shadow: 1px 1px 15px #ff4431;
-}
-html body main article .right .inputBox button {
-  width: 343px;
-  height: 122px;
-  background: url(../images/loginbtn.png) no-repeat center;
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: bold;
+html body main article .inputBox > label > input {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7490196078);
+  border-radius: 10px;
+  border: 3px solid #fff;
+  width: 320px;
+  height: 45px;
+  font-size: 18px;
   text-align: center;
-  letter-spacing: 1px;
-  padding-bottom: 10px;
-  position: absolute;
-  top: 162px;
-  left: -10px;
-  z-index: 3;
 }
-html body main article .right .inputBox button:hover, html body main article .right .inputBox button:active, html body main article .right .inputBox button.active {
-  background: url(../images/loginbtn_hov.png) no-repeat center;
+html body main article .inputBox > label > input::-webkit-input-placeholder {
+  color: inherit;
+  font-size: inherit;
 }
-html body main article .right .union {
-  width: 272px;
-  height: 53px;
-  background: url(../images/union.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 276px;
-  left: 30px;
+html body main article .inputBox > label > input::-moz-placeholder {
+  color: inherit;
+  font-size: inherit;
 }
-html body main article .right .object2 {
-  width: 1487px;
-  height: 1000px;
-  background: url(../images/object2.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  z-index: -1;
-  -webkit-animation: l_side 0.2s 0.2s linear;
-          animation: l_side 0.2s 0.2s linear;
+html body main article .inputBox > label > input:-ms-input-placeholder {
+  color: inherit;
+  font-size: inherit;
 }
-html body main article .right .object4 {
-  width: 476px;
-  height: 731px;
-  background: url(../images/object4.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 269px;
-  right: 379px;
-  z-index: -1;
-  -webkit-animation: lag 0.6s linear, r_side 0.3s 0.6s linear;
-          animation: lag 0.6s linear, r_side 0.3s 0.6s linear;
+html body main article .inputBox > label > input::-ms-input-placeholder {
+  color: inherit;
+  font-size: inherit;
 }
-html body main article .right .object4_s {
-  width: 476px;
-  height: 731px;
-  background: url(../images/object4.png) no-repeat center;
-  background-size: 100%;
-  position: absolute;
-  top: 259px;
-  right: 369px;
-  z-index: -1;
-  opacity: 0;
-  -webkit-animation: lag 0.7s linear, r_side 0.3s 0.7s linear, shadow 0.6s 0.7s ease-in-out;
-          animation: lag 0.7s linear, r_side 0.3s 0.7s linear, shadow 0.6s 0.7s ease-in-out;
+html body main article .inputBox > label > input::placeholder {
+  color: inherit;
+  font-size: inherit;
+}
+html body main article .inputBox > button {
+  color: #000;
+  background: url("../images/button.png") no-repeat center/contain;
+  width: 300px;
+  height: 100px;
+}
+html body main article .inputBox > button span {
+  font-size: 32px;
+  display: block;
+  margin-top: -15px;
+  font-weight: bolder;
+}
+html body main article .inputBox > button:hover, html body main article .inputBox > button:active, html body main article .inputBox > button.active {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 html body .bg {
+  background: url("../images/bg_web.png") no-repeat top center/100%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  min-width: 1000px;
-  height: 100%;
-  background: url("../images/bg.png") no-repeat top center;
   z-index: -999;
-}
-html body .bglight {
-  width: 1920px;
-  height: 1000px;
-  background: url(../images/lightBG.png) no-repeat top center;
-  background-size: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  -webkit-animation: lag 0.8s ease-in-out, light 0.5s 0.8s ease-in-out;
-          animation: lag 0.8s ease-in-out, light 0.5s 0.8s ease-in-out;
-  z-index: -900;
+  min-width: 1000px;
 }
 
-@-webkit-keyframes lag {
-  0% {
-    opacity: 0;
+@media (max-width: 768px) {
+  html {
+    min-width: unset;
   }
-  100% {
-    opacity: 0;
+  html body main article .inputBox {
+    position: relative;
+    left: unset;
+    top: 0;
+    padding-top: 0;
+    width: unset;
   }
-}
-
-@keyframes lag {
-  0% {
-    opacity: 0;
+  html body main article .inputBox > .logo {
+    width: 60vw;
+    height: 12vw;
   }
-  100% {
-    opacity: 0;
+  html body main article .inputBox > label > input {
+    border-radius: 2.5vw;
+    border: 0.75vw solid #fff;
+    width: 60vw;
+    height: 10vw;
+    font-size: 4vw;
   }
-}
-@-webkit-keyframes l_side {
-  0% {
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%);
+  html body main article .inputBox > button {
+    background: url("../images/button.png") no-repeat center/cover;
+    width: 40vw;
+    height: 15vw;
   }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+  html body main article .inputBox > button span {
+    font-size: 5.5vw;
+    margin-bottom: -2vw;
   }
-}
-@keyframes l_side {
-  0% {
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%);
+  html body main article .inputBox > button:hover, html body main article .inputBox > button:active, html body main article .inputBox > button.active {
+    -webkit-filter: brightness(1.2);
+            filter: brightness(1.2);
   }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-@-webkit-keyframes o3 {
-  0% {
-    -webkit-transform: translateX(-300%);
-            transform: translateX(-300%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-@keyframes o3 {
-  0% {
-    -webkit-transform: translateX(-300%);
-            transform: translateX(-300%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-@-webkit-keyframes r_side {
-  0% {
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-@keyframes r_side {
-  0% {
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-@-webkit-keyframes shadow1 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-200%);
-            transform: translateX(-200%);
-  }
-  30% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-@keyframes shadow1 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-200%);
-            transform: translateX(-200%);
-  }
-  30% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-@-webkit-keyframes shadow {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  30% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-@keyframes shadow {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  30% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-@-webkit-keyframes light {
-  0% {
-    -webkit-transform: rotate(0deg) scale(0);
-            transform: rotate(0deg) scale(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg) scale(1);
-            transform: rotate(360deg) scale(1);
-  }
-}
-@keyframes light {
-  0% {
-    -webkit-transform: rotate(0deg) scale(0);
-            transform: rotate(0deg) scale(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg) scale(1);
-            transform: rotate(360deg) scale(1);
+  html body .bg {
+    background: url("../images/bg_mobile.png") no-repeat top center/cover;
+    min-width: unset;
   }
 }
